@@ -16,4 +16,12 @@ const config = {
 	},
 };
 
-const game = new Phaser.Game(config);
+FBInstant.initializeAsync()
+	.then(() =>
+	{
+		FBInstant.setLoadingProgress(100);
+		FBInstant.startGameAsync().then(() =>
+		{
+			const game = new Phaser.Game(config);
+		});
+	});

@@ -51,6 +51,7 @@ module.exports = {
 			server: {
 				baseDir: ['./', './dev'],
 			},
+			https: true,
 		}),
 	],
 	module: {

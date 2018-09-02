@@ -27,6 +27,7 @@ class GameScene extends BaseScene
 		basketball.body.setAngularDrag(0.1);
 
 		const scoreText = this.add.text(window.innerWidth / 2, window.innerHeight / 1.3, '0', { fontSize: '64px', align: 'center' });
+		scoreText.setOrigin(0.5, 0.5);
 
 		const onHit = (pointer) =>
 		{
