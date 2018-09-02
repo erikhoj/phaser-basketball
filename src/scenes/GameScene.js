@@ -21,7 +21,6 @@ class GameScene extends BaseScene
 		this.physics.world.setBoundsCollision(true, true, false, false);
 
 		const basketball = this.physics.add.image(window.innerWidth / 2, window.innerHeight / 1.5, 'basketball');
-		basketball.setScale(0.5, 0.5);
 		basketball.body.setAllowGravity(false);
 		basketball.body.setBounce(0.9, 0.9);
 		basketball.body.setAngularDrag(0.1);
@@ -36,7 +35,7 @@ class GameScene extends BaseScene
 
 			const clickDiff = basketBallCenter.subtract(clickPos);
 
-			if (clickDiff.length() > 200)
+			if (clickDiff.length() > 70)
 			{
 				return;
 			}
