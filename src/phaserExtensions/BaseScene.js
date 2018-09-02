@@ -1,15 +1,11 @@
 import Phaser from 'phaser';
 
-class GameScene extends Phaser.Scene
+class BaseScene extends Phaser.Scene
 {
 	constructor()
 	{
 		super({
-			key: 'gameScene',
-			mapAdd:
-			{
-				game: 'game',
-			}
+			key: 'gameScene'
 		});
 	}
 
@@ -23,7 +19,7 @@ class GameScene extends Phaser.Scene
 			this.physics.world.setBounds(0, 0, width, height, true, true, true, true);
 			this.cameras.main.setSize(width, height);
 
-			this.game.renderer.resize(width, height);
+			this.sys.game.renderer.resize(width, height);
 		}
 
 		resize();
@@ -31,4 +27,4 @@ class GameScene extends Phaser.Scene
 	}
 }
 
-export default GameScene;
+export default BaseScene;
