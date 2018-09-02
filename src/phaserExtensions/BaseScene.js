@@ -2,13 +2,6 @@ import Phaser from 'phaser';
 
 class BaseScene extends Phaser.Scene
 {
-	constructor()
-	{
-		super({
-			key: 'gameScene'
-		});
-	}
-
 	create()
 	{
 		const resize = () =>
