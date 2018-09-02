@@ -19,6 +19,7 @@
     "no-nested-ternary": "off",
 	"semi": ["error", "always"],
 	"lines-between-class-members": "off",
+	"implicit-arrow-linebreak": "off"
   },
   "globals": {
     "Phaser": true
